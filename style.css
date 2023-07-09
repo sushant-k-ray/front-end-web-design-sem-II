@@ -130,7 +130,7 @@ select, input{
 
 @media screen and (max-width: 800px) {
     body{
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .flex-row, .flex-col{
@@ -142,9 +142,13 @@ select, input{
         width: 95%;
     }
 
+    #toc{
+        width: 75%;
+    }
+
     #waiting{
         margin: auto;
-        margin-bottom: 10%;
+        margin-bottom: 10vw;
     }
 
     #bmi-displayer{
@@ -152,8 +156,13 @@ select, input{
         height: auto;
     }
 
-    p, table{
-        font-size: 70%;
+    p{
+        font-size: 90%;
+        line-height: 175%;
+    }
+
+    table{
+        font-size: 56%;
     }
 
     #input-div{
