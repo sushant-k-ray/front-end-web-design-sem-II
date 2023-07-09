@@ -158,5 +158,6 @@ select, input{
 
     #input-div{
         width: auto;
+        text-align: center;
     }
 }
