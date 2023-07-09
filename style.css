@@ -1,0 +1,162 @@
+body {
+    background-color: #ccc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5vw;
+    margin: 0px;
+}
+
+.center{
+    margin: auto;
+    display: block;
+    width: 70%;
+}
+
+h1{
+    font-size: 125%;
+    text-align: center;
+}
+
+#header{
+    font-size: 150%;
+    text-align: center;
+}
+
+hr{
+    border: 1px solid #ddd;
+    width: 80%;
+}
+
+#toc{
+    width: 60%;
+    background-color:rgb(196, 225, 207);
+    border-radius: 25px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#toc-expanded{
+    width: 80%;
+    padding-left: 20%;
+    display: none;
+}
+
+h2{
+    font-size: 100%;
+}
+
+h3{
+    font-size: 80%;
+}
+
+h4{
+    font-size: 65%;
+}
+
+a:link, a:visited{
+    color:rgb(63, 106, 184);
+    text-decoration: none;
+}
+
+p{
+    font-size: 70%;
+    line-height: 150%;
+}
+
+table{
+    font-size: 70%;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+}
+
+tr, td, th{
+    border: 1px solid #a2a9b1;
+    padding: 0.2em 0.4em;
+}
+
+th{
+    background-color: #dbdee5;
+    border-collapse: collapse;
+    text-align:center;
+}
+
+select, input{
+    font-size: 75%;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+#calc{
+    padding-top: 10px;
+    background-color: #ddd;
+    width: 100%;
+}
+
+#result{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#waiting{
+    font-size: 100%;
+    margin-top: 15%;
+    margin-right: 10%;
+    margin-left: 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+#bmi{
+    font-size: 300%;
+    text-align: center;
+    font-weight: bolder;
+    display: none;
+}
+
+#input-div{
+    padding: 2% 0px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        font-size: 4vw;
+    }
+
+    .flex-row, .flex-col{
+        display: block;
+        flex-direction: unset;
+    }
+
+    .center{
+        width: 95%;
+    }
+
+    #waiting{
+        margin: auto;
+        margin-bottom: 10%;
+    }
+
+    #bmi-displayer{
+        width: auto;
+        height: auto;
+    }
+
+    p, table{
+        font-size: 70%;
+    }
+
+    #input-div{
+        width: auto;
+    }
+}
