@@ -119,7 +119,7 @@ function toggleHeightUnit()
         document.getElementById("ft").style.display = "none";
     }else{
         document.getElementById("height_cm").style.display = "none";
-        document.getElementById("ft").style.display = "block";
+        document.getElementById("ft").style.display = "inline";
     }
 }
 
