@@ -187,7 +187,7 @@ select, input{
         font-size: 50%;
     }
 
-	nav a:link, a:visited {
+    nav a:link, nav a:visited {
         font-size: 75%;
     }
 }
@@ -230,7 +230,7 @@ select, input{
     }
 
     table{
-        font-size: 70%;
+        font-size: 56%;
     }
 
     #input-div{
