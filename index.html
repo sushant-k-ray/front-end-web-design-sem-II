@@ -12,6 +12,17 @@
         <script src="script.js"></script>
     </head>
     <body>
+
+        <nav class="center">
+			<ul class="flex-row">
+  			<li><a id="current" href="index.html">BMI</a></li>
+  			<li><a href="help.html">Help</a></li>
+  			<li><a href="citation.html">Citation</a></li>
+  			<li><a href="syllabus.html">Syllabus</a></li>
+			<li><a href="about.html">About</a></li>
+			</ul>
+        </nav>
+
         <div class="center" style="padding: 5%; background-color: #eee;">
 
             <h1 id="header">Body Mass Index(BMI)</h1>
@@ -21,7 +32,7 @@
 
                 <div style="display: flex; width: 80%; padding-left: 10%; cursor: pointer;" onclick="toggleTOC()">
                     <h3 style="width: 75%; margin: 2% 4% 2%;">Table of contents</h3>
-                    <h3 style="width: 25%; text-align: right; margin: 2% 4% 2%;"> + </h3>
+                    <h3 id="plus" style="width: 25%; text-align: right; margin: 2% 4% 2%;"> + </h3>
                 </div>
 
                 <div id="toc-expanded">

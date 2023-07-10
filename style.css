@@ -5,6 +5,42 @@ body {
     margin: 0px;
 }
 
+nav {
+    background-color: #2a2a2a;
+    padding: 0px 5%;
+}
+
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+  
+nav li{
+  float: left;
+  width: 18vw;
+  text-align: center;
+}
+
+nav a:link, nav a:visited, nav a:active {
+  display: block;
+  color: white;
+  padding: 10% 0px;
+  font-size: 70%;
+}
+
+nav a:hover {
+  background-color: #111;
+}
+
+#current {
+  background-color: #04AA6D;
+  color: white;
+}
+
 .center{
     margin: auto;
     display: block;
@@ -54,14 +90,14 @@ h4{
     font-size: 65%;
 }
 
-a:link, a:visited{
-    color:rgb(63, 106, 184);
-    text-decoration: none;
-}
-
 p{
     font-size: 70%;
     line-height: 150%;
+}
+
+a:link, a:visited{
+    color:rgb(63, 106, 184);
+    text-decoration: none;
 }
 
 table{
@@ -128,7 +164,35 @@ select, input{
     margin-left: 10%;
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 900px) {
+    body{
+        font-size: 4vw;
+    }
+
+    .center{
+        width: 80%;
+    }
+
+    #toc{
+        width: 70%;
+    }
+
+    p {
+        font-size: 80%;
+        line-height: 175%;
+    }
+
+    table{
+        font-size: 50%;
+    }
+
+	nav a:link, a:visited {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
     body{
         font-size: 5vw;
     }
@@ -156,13 +220,17 @@ select, input{
         height: auto;
     }
 
-    p{
+    p {
         font-size: 90%;
         line-height: 175%;
     }
 
+	nav a:link, a:visited {
+        font-size: 75%;
+    }
+
     table{
-        font-size: 56%;
+        font-size: 70%;
     }
 
     #input-div{

@@ -83,7 +83,8 @@ function displayBMI()
     if(BMI <= 18.5)
     {
         let index = 18.5 - BMI;
-        index %= 9;
+        index /= 18.5;
+        index *= 8;
         index = index.toFixed(0);
         background.style.backgroundColor = underWeightColor[index];
 
@@ -95,7 +96,8 @@ function displayBMI()
         if(index < 0)
             index = 0;
 
-        index %= 9;
+        index /= 15.1;
+        index *= 8;
         index = index.toFixed(0);
 
         index = 8 - index;
@@ -126,12 +128,17 @@ function toggleHeightUnit()
 function toggleTOC()
 {
     let toc = document.getElementById("toc-expanded");
+    let plus = document.getElementById("plus");
     let display = toc.style.display;
     display = display ? display : "none";
 
-    if(display == "none")
+    if(display == "none"){
         toc.style.display = "block";
+        plus.innerHTML = "-";
+    }
 
-    else
+    else{
         toc.style.display = "none";
+        plus.innerHTML = "+";
+    }
 }
